@@ -1,33 +1,37 @@
+import time
+
+def executeSomething():
+
 consumer_key        = 'ABCDEFGHIJKLKMNOPQRSTUVWXYZ'
 consumer_secret     = '1234567890ABCDEFGHIJKLMNOPQRSTUVXYZ'
 access_token        = 'ZYXWVUTSRQPONMLKJIHFEDCBA'
 access_token_secret = '0987654321ZYXWVUTSRQPONMLKJIHFEDCBA'
 messages = [
-    "a",
-    "b",
-    "c",
-    "d",
-    "f",
-    "g",
-    "h",
-    "i",
-    "j",
-    "k",
-    "l",
-    "m",
-    "n",
-    "o",
-    "p",
-    "q",
-    "r",
-    "s",
-    "t",
-    "u",
-    "v",
-    "w",
-    "x",
-    "y",
-    "z",
+    "come state?",
+    "io molto bene!",
+    "oggi fa caldo!",
+    "domani piove!",
+    "che bel sole!",
+    "speriamo faccia bello..",
+    "che bella giornata!",
+    "che sonno!",
+    "si lavora!",
+    "pyhton <3",
+    "polpette!",
+    "ikea!",
+    "computer <3",
+    "fame!",
+    "sete!",
+    "biscotti <3",
+    "torta!",
+    "patatine <3",
+    "stanchissimo..",
+    "manca poco ;)",
+    "super caldo!",
+    "piscina!",
+    "argentina!",
+    "calcio!",
+    "forza ragazzi!",
 ]
 
 
@@ -53,3 +57,8 @@ twitter = Twython(
 message = random.choice(messages)
 twitter.update_status(status=message)
 print("Tweeted: %s" % message)
+
+time.sleep(5)
+
+while True:
+    executeSomething()
