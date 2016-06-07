@@ -1,0 +1,1 @@
+while true; do python prova-script.py; sleep 2; done
