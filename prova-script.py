@@ -30,43 +30,43 @@ messages = [
     		"argentina!",
     		"calcio!",
     		"forza ragazzi!",
-	]
+]
 
 
-	import time
+import time
 
-	import random
+import random
 
-	from twython import Twython
+from twython import Twython
 
-	from auth import (
-    		consumer_key,
-    		consumer_secret,
-    		access_token,
-    		access_token_secret
-	)
+from auth import (
+    	consumer_key,
+    	consumer_secret,
+    	access_token,
+    	access_token_secret
+)
 
-	twitter = Twython(
-    		consumer_key,
-    		consumer_secret,
-    		access_token,
-    		access_token_secret
-	)
+twitter = Twython(
+    	consumer_key,
+    	consumer_secret,
+    	access_token,
+    	access_token_secret
+)
 
 
-	message = random.choice(messages)
-	twitter.update_status(status=message)
-	print("Tweeted: %s" % message)
+message = random.choice(messages)
+twitter.update_status(status=message)
+print("Tweeted: %s" % message)
 
-	time.sleep(10)
+time.sleep(10)
 
-	message = random.choice(messages)
-        twitter.update_status(status=message)
-        print("Tweeted: %s" % message)
+message = random.choice(messages)
+twitter.update_status(status=message)
+print("Tweeted: %s" % message)
 
-	time.sleep(10)
+time.sleep(10)
 
-	message = random.choice(messages)
-        twitter.update_status(status=message)
-        print("Tweeted: %s" % message)
+message = random.choice(messages)
+twitter.update_status(status=message)
+print("Tweeted: %s" % message)
 
