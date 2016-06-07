@@ -2,10 +2,11 @@ import time
 
 def executeSomething():
 
-consumer_key        = 'ABCDEFGHIJKLKMNOPQRSTUVWXYZ'
-consumer_secret     = '1234567890ABCDEFGHIJKLMNOPQRSTUVXYZ'
-access_token        = 'ZYXWVUTSRQPONMLKJIHFEDCBA'
-access_token_secret = '0987654321ZYXWVUTSRQPONMLKJIHFEDCBA'
+consumer_key        = "ABCDEFGHIJKLKMNOPQRSTUVWXYZ"
+consumer_secret     = "1234567890ABCDEFGHIJKLMNOPQRSTUVXYZ"
+access_token        = "ZYXWVUTSRQPONMLKJIHFEDCBA"
+access_token_secret = "0987654321ZYXWVUTSRQPONMLKJIHFEDCB"
+
 messages = [
     "come state?",
     "io molto bene!",
